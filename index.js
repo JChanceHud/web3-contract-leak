@@ -24,11 +24,6 @@ function printMemory() {
 }
 
 ;(async () => {
-  //for (let x = 0; x < 20000; x++) {
-  //  if (x % 1000 === 0) printMemory()
-  //  const eth = new Eth()
-  //  const contract = new eth.Contract(ABI, addr)
-  //}
   for (let x = 0; x < 20000; x++) {
     if (x % 1000 === 0) printMemory()
     const contract = new web3.eth.Contract(ABI, addr)
